@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+float Base,Exponent;
+    scanf("%f%f",&Base,&Exponent);
+    int result=pow(Base,Exponent);
+    printf("%d",result);
+    return 0;
+}
