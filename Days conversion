@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int totaldays;
+    scanf("%d",&totaldays);
+    int years=totaldays/365;
+     totaldays=totaldays%365;
+    int weeks=totaldays/7;
+    int days=totaldays%7;
+    
+    printf("Years: %d\nWeeks: %d\nDays: %d\n",years,weeks,days);
+
+    return 0;
+}
