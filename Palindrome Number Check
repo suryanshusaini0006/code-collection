@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n,r=0,original;
+    scanf("%d",&n);
+    original=n;
+    while(n!=0){
+    int lastdigit=n%10;
+    r=r*10;
+    r=r +lastdigit;
+    n=n/10;
+    }
+    if(r==original){
+    printf("Palindrome\n");
+    }
+    else{
+    printf("Not Palindrome\n");
+    }
+    return 0;
+    }
